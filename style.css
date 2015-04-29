@@ -1,4 +1,4 @@
-p, h1, h2{align: center; font-family: Segoe Print; color: #ffffff;}
+p, h1, h2, b{align: center; font-family: Segoe Print; color: #ffffff;}
 h3{align: center; font-family: Segoe Print; color: #9c0e0a;}
 
 body{ background: url("img/fonstola.ru-57541.jpg"); alink: #FF0000; link: #FFFFFF; vlink:#008000; bgcolor: orange;}
@@ -7,6 +7,13 @@ body{ background: url("img/fonstola.ru-57541.jpg"); alink: #FF0000; link: #FFFFF
     border: 0;
     width: 220px;
 }
+.marimo{
+    text-align:center;
+    clear:both;
+    padding-top:2px;
+    padding-bottom:2px;
+    font-family: Segoe Print;
+    color: #ffffff;}
 
 .log{
     width: 1200px;
@@ -70,8 +77,11 @@ div.menu ul li:hover {
 div.menu ul {
     margin:0; padding: 0;
 }
+#sub li{ /*выравнивание по левому краю*/
+        /*ширина 100px*/
+    position:relative; /*Устанавливаем тип позиционирования*/}
 
-li.sub ul{
+#sub li ul{
     padding: 10px 6px;
     position: absolute;
     display: none;
@@ -82,27 +92,44 @@ li.sub ul{
     background: #ffda62;
 }
 
-li.sub:hover ul{
-    display: block;
-}
-
-li.sub ul li {
+#sub li ul li {
     display: block;
     border: none;
     text-align: center;
     background: none;
-    width: auto;
+    width: 205px;
 }
-li.sub ul li:hover{
+#sub li ul li a{
+ line-height: 25px;
+}
+
+#sub li:hover ul{
+    display: block;
+}
+
+#sub li ul li:hover{
     background: none;
 }
-li.sub ul a:hover {
+#sub li ul a:hover {
     color: #fb0300;
 }
 
-li.sub ul {
+#sub li ul {
     box-shadow: 5px 5px    15px rgba(0,0,0,0.7);
 }
+
+#sub li ul li ul,   /*Для всех блоков вложенных списков третьего и ниже уровней */
+#sub  li:hover ul li ul{   /*А также для них же, но при условии активации списка второго уровня*/
+    display:none;       /*Выключаем отображение*/
+    position:absolute;  /*Позиционируем абсолютно*/
+    left:200px;     /*сдвигаем все меню вправо на 200px*/
+    top: 0;
+}
+#sub li ul li:hover ul{     /*Для всех блоков вложенных списков третьего и ниже уровней при активации*/
+    display:block;   /*Включаем отображение*/
+}
+
+
 
 .di {
     height: 4px;
