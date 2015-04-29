@@ -1,18 +1,19 @@
-p, h1{align: center; font-family: Segoe Print; color: #ffffff;}
-
+p, h1, h2{align: center; font-family: Segoe Print; color: #ffffff;}
+h3{align: center; font-family: Segoe Print; color: #9c0e0a;}
 
 body{ background: url("img/fonstola.ru-57541.jpg"); alink: #FF0000; link: #FFFFFF; vlink:#008000; bgcolor: orange;}
 .leo{
     align:center;
-    border: 1;
+    border: 0;
     width: 220px;
 }
 
 .log{
     width: 1200px;
     border-collapse: collapse;
-    border: 1;
+    border: 0;
 }
+
 
 div.menu a{
     font-family: Segoe Print, sylfaen;
@@ -27,6 +28,26 @@ div.menu {
     background: -webkit-linear-gradient(top, #f0967e, #ffda62);
     background: -moz-linear-gradient(top, #f0967e, #ffda62);
     border-radius: 4px;
+}
+div.menu1 {
+    padding: 4px;
+    text-align: center;
+    background: linear-gradient(top, #ffda62, #84f05a);
+    background: -webkit-linear-gradient(top, #ffda62, #ffffff);
+    background: -moz-linear-gradient(top, #ffda62, #ffffff);
+    border-radius: 12px;
+}
+div.menu2 {
+    padding: 4px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+}
+div.menu3 {
+    padding: 4px;
+    text-align: center;
+    background: #000000;
+    border-radius: 12px;
 }
 
 div.menu ul li {
